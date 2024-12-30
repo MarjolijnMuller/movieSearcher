@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 3rem;
+    background: var(--second-bg-color);
+    align-items: center;
+}
+
+.navList {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 0.5rem;
+}
+
+.navItem {
+    list-style: none;
+}
+
+.navLink:hover{
+    color: var(--primary-color);
+}
+
+.navItem+.navItem {
+    margin-left: 1rem;
+}
+
+.logIn {
+    margin-right: 1rem;
+    width: 8rem;
+    height: 2.5rem;
+    background: var(--accent-color);
+    font-size: 1rem;
+    border-radius: 12px;
+    font-weight: bold;
+    border: none;
+}
+
+.logIn:hover {
+    background: var(--text-color);
+    color: var(--accent-color);
+}
